@@ -6,7 +6,7 @@ import {
   View,
 } from 'react-native';
 
-import Exponent from 'exponent';
+import { Font } from 'exponent';
 import React from 'react';
 
 class App extends React.Component {
@@ -18,7 +18,7 @@ class App extends React.Component {
   }
 
   async componentDidMount() {
-    await Exponent.Font.loadAsync({
+    await Font.loadAsync({
       awesome: 'https://github.com/FortAwesome/Font-Awesome/raw/master/fonts/fontawesome-webfont.ttf',
     });
     this.setState({ fontLoaded: true });
@@ -31,7 +31,7 @@ class App extends React.Component {
                      alignItems: 'center' }}>
         {
           this.state.fontLoaded ? (
-            <Text style={{ ...Exponent.Font.style('awesome'),
+            <Text style={{ ...Font.style('awesome'),
                            fontSize: 56 }}>
               {'\uf000'}
             </Text>
