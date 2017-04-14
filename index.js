@@ -1,10 +1,6 @@
 'use strict';
 
-import {
-  AppRegistry,
-  Text,
-  View,
-} from 'react-native';
+import { AppRegistry, Text, View } from 'react-native';
 
 import { Font } from 'exponent';
 import React from 'react';
@@ -26,17 +22,21 @@ class App extends React.Component {
 
   render() {
     return (
-      <View style={{ flex: 1,
-                     justifyContent: 'center',
-                     alignItems: 'center' }}>
-        {
-          this.state.fontLoaded ? (
-            <Text style={{ ...Font.style('awesome'),
-                           fontSize: 56 }}>
+      <View
+        style={{
+          flex: 1,
+          justifyContent: 'center',
+          alignItems: 'center',
+        }}>
+        {this.state.fontLoaded
+          ? <Text
+              style={{
+                ...Font.style('awesome'),
+                fontSize: 56,
+              }}>
               {'\uf000'}
             </Text>
-          ) : null
-        }
+          : null}
       </View>
     );
   }
