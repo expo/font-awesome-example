@@ -15,7 +15,8 @@ class App extends React.Component {
 
   async componentDidMount() {
     await Font.loadAsync({
-      awesome: 'https://github.com/FortAwesome/Font-Awesome/raw/master/fonts/fontawesome-webfont.ttf',
+      awesome:
+        'https://github.com/FortAwesome/Font-Awesome/raw/master/fonts/fontawesome-webfont.ttf',
     });
     this.setState({ fontLoaded: true });
   }
@@ -31,7 +32,7 @@ class App extends React.Component {
         {this.state.fontLoaded
           ? <Text
               style={{
-                ...Font.style('awesome'),
+                fontFamily: 'awesome',
                 fontSize: 56,
               }}>
               {'\uf000'}
