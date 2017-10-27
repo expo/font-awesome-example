@@ -29,15 +29,15 @@ class App extends React.Component {
           justifyContent: 'center',
           alignItems: 'center',
         }}>
-        {this.state.fontLoaded
-          ? <Text
-              style={{
-                fontFamily: 'awesome',
-                fontSize: 56,
-              }}>
-              {'\uf000'}
-            </Text>
-          : null}
+        {this.state.fontLoaded ? (
+          <Text
+            style={{
+              fontFamily: 'awesome',
+              fontSize: 56,
+            }}>
+            {'\uf000'}
+          </Text>
+        ) : null}
       </View>
     );
   }
