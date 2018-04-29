@@ -2,7 +2,7 @@
 
 import { AppRegistry, Text, View } from 'react-native';
 
-import { Font } from 'exponent';
+import { Font } from 'expo';
 import React from 'react';
 
 class App extends React.Component {
@@ -16,7 +16,7 @@ class App extends React.Component {
   async componentDidMount() {
     await Font.loadAsync({
       awesome:
-        'https://github.com/FortAwesome/Font-Awesome/raw/master/fonts/fontawesome-webfont.ttf',
+        'https://github.com/FortAwesome/Font-Awesome/raw/master/web-fonts-with-css/webfonts/fa-regular-400.ttf',
     });
     this.setState({ fontLoaded: true });
   }
