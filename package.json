@@ -10,9 +10,10 @@
   "author": "Nikhilesh Sigatapu <nikhilesh@sixfivezero.net>",
   "license": "MIT",
   "dependencies": {
-    "exponent": "^6.0.0",
+    "expo": "^27.0.1",
     "react": "^15.1.0",
     "react-native": "github:exponentjs/react-native#sdk-6.0.0"
+    "react-native-fontawesome": "^5.7.0"
   },
   "devDependencies": {
     "babel-preset-react-native-stage-0": "^1.0.1"
