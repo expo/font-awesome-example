@@ -12,7 +12,7 @@
   "dependencies": {
     "expo": "^27.0.1",
     "react": "^15.1.0",
-    "react-native": "github:exponentjs/react-native#sdk-6.0.0"
+    "react-native": "github:exponentjs/react-native#sdk-6.0.0",
     "react-native-fontawesome": "^5.7.0"
   },
   "devDependencies": {
