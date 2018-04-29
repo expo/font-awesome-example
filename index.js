@@ -6,17 +6,14 @@ import { Font } from 'exponent';
 import React from 'react';
 
 class App extends React.Component {
-  constructor(props, context) {
-    super(props, context);
-    this.state = {
-      fontLoaded: false,
-    };
-  }
+  state = {
+    fontLoaded: false,
+  };
 
   async componentDidMount() {
     await Font.loadAsync({
-      awesome:
-        'https://github.com/FortAwesome/Font-Awesome/raw/master/fonts/fontawesome-webfont.ttf',
+      'FontAwesome': require('./assets/fonts/fontawesome-webfont.ttf')
+      // Please change this url to your local asset address
     });
     this.setState({ fontLoaded: true });
   }
@@ -29,18 +26,11 @@ class App extends React.Component {
           justifyContent: 'center',
           alignItems: 'center',
         }}>
-        {this.state.fontLoaded ? (
-          <Text
-            style={{
-              fontFamily: 'awesome',
-              fontSize: 56,
-            }}>
-            {'\uf000'}
-          </Text>
-        ) : null}
+        {this.state.fontLoaded ? <FontAwesome>{Icons.addressBook}</FontAwesome> : null}
       </View>
     );
   }
 }
 
+// skip this line if using Create React Native App
 AppRegistry.registerComponent('main', () => App);
