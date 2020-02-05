@@ -1,6 +1,3 @@
-Font Awesome with Exponent
-==========================
+# Font Awesome Example
 
-Using [Font Awesome](http://fontawesome.io/) with Exponent. Full tutorial
-available in the
-[Exponent documentation](http://exponent.readthedocs.io/en/latest/tuts/font-awesome.html)!
+**This example has moved to [examples/with-icons](https://github.com/expo/examples/tree/master/with-icons)**
